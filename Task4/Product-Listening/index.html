@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Product Store</h1>
+            <p>Find products that fit your needs</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="controls">
+
+            <div class="filter-group">
+                <label for="categoryFilter">Category</label>
+
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="books">Books</option>
+                    <option value="home">Home</option>
+                </select>
+            </div>
+
+
+            <div class="filter-group">
+                <label for="priceFilter">Maximum Price</label>
+
+                <select id="priceFilter">
+                    <option value="all">Any Price</option>
+                    <option value="50">Under ₹50</option>
+                    <option value="100">Under ₹100</option>
+                    <option value="500">Under ₹500</option>
+                    <option value="1000">Under ₹1000</option>
+                </select>
+            </div>
+
+
+            <div class="filter-group">
+                <label for="sortFilter">Sort By</label>
+
+                <select id="sortFilter">
+                    <option value="default">Default</option>
+                    <option value="rating-high">
+                        Rating: High to Low
+                    </option>
+                    <option value="rating-low">
+                        Rating: Low to High
+                    </option>
+                    <option value="price-low">
+                        Price: Low to High
+                    </option>
+                    <option value="price-high">
+                        Price: High to Low
+                    </option>
+                </select>
+            </div>
+
+            <button id="resetBtn" class="reset-btn">
+                Reset Filters
+            </button>
+
+        </section>
+
+
+        <section class="products-section">
+
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <span id="productCount">0 Products</span>
+            </div>
+
+            <div id="productContainer" class="product-grid">
+                <!-- Products will be displayed here -->
+            </div>
+
+            <p id="noProducts" class="no-products">
+                No products match your selected filters.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Product Store</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

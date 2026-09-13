@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Keeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Note Keeper</h1>
+            <p>Write it down. Keep it safe.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="note-editor">
+            <h2>Create a Note</h2>
+
+            <form id="noteForm">
+                <div class="form-group">
+                    <label for="noteTitle">Title</label>
+                    <input
+                        type="text"
+                        id="noteTitle"
+                        placeholder="Enter note title"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="noteContent">Note</label>
+                    <textarea
+                        id="noteContent"
+                        rows="6"
+                        placeholder="Write your note here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="save-btn">
+                    Save Note
+                </button>
+            </form>
+        </section>
+
+        <section class="notes-section">
+            <div class="section-heading">
+                <h2>My Notes</h2>
+                <span id="noteCount">0 Notes</span>
+            </div>
+
+            <div id="notesContainer" class="notes-container">
+                <p class="empty-message">
+                    No notes yet. Create your first note!
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Note Keeper</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

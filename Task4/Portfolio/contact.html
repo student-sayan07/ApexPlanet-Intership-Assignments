@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact | Sayan Das</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Sayan Das
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="active"
+                >
+                    Contact
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <p class="eyebrow">
+                GET IN TOUCH
+            </p>
+
+            <h1>
+                Let's connect
+            </h1>
+
+            <p>
+                Have a question, idea or opportunity?
+                Feel free to send a message.
+            </p>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section contact-layout">
+
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+                <h2>
+                    Contact details
+                </h2>
+
+                <p>
+                    You can reach me through the details below.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <strong>Email</strong>
+
+                    <a href="mailto:yourname@example.com">
+                        yourname@example.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>Location</strong>
+
+                    <span>
+                        Kolkata, India
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>GitHub</strong>
+
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                    >
+                        github.com/yourusername
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+            <form
+                class="contact-form"
+                id="contactForm"
+            >
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="button primary-button"
+                >
+                    Send Message
+                </button>
+
+                <p
+                    id="formMessage"
+                    class="form-message"
+                ></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <p>
+            © <span id="year"></span> Sayan Das.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
